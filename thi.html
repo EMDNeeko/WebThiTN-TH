@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Thi trắc nghiệm
+        </title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <nav id="TieuDe">
+            <h2 id="ContentInTD">Bài thi trắc nghiệm</h2>
+        </nav>
+        <br><br>
+        <div>
+            <script type="text/javascript">
+                var intervalId;
+                var secondsRemaining = 3600; // 60 minutes * 60 seconds
+                window.onload = function() {
+                    function updateCountdown() {
+                        var minutes = Math.floor(secondsRemaining / 60);
+                        var seconds = secondsRemaining % 60;
+                        document.getElementById("countdown").innerText = "Thời gian còn lại: " + minutes + " phút " + seconds + " giây";
+                        secondsRemaining--;
+                        if (secondsRemaining < 0) {
+                            clearInterval(intervalId);
+                            document.getElementById("countdown").innerText = "Hết giờ!";
+                            alert("Đã hết giờ làm bài, yêu cầu thí sinh nộp bài");
+                            // Redirect to a new page (you can replace "new_page.html" with the actual URL)
+                            window.location.href = "welcome.html";
+                        }
+                    }
+                    updateCountdown();
+                    var intervalId = setInterval(updateCountdown, 1000);
+                };
+            </script>
+            <div id="countdown">Thời gian còn lại: 59 phút 59 giây</div>
+        </div>
+        <div class="question">
+            <h3>PHẦN I: CÂU HỎI LỰA CHỌN ĐÚNG/SAI</h3>
+            <p>Với mỗi câu hỏi từ 1 đến 10, thí sinh chỉ tick vào 1 trong 2 phương án: Đúng hoặc Sai</p>
+            <h3>Câu 1.</h3>
+            <p>HTML là một ngôn ngữ lập trình.</p>
+            <ul class="options">
+                <li><input type="radio" name="option1" value="option1"> A. Đúng</li>
+                <li><input type="radio" name="option1" value="option2"> B. Sai</li>
+            </ul>
+            <h3>Câu 2.</h3>
+            <p>JavaScript là một ngôn ngữ lập trình.</p>
+            <ul class="options">
+                <li><input type="radio" name="option2" value="option1"> A. Đúng</li>
+                <li><input type="radio" name="option2" value="option2"> B. Sai</li>
+            </ul>
+            <h3>Câu 3.</h3>
+            <p>Để khởi tạo một lớp, ta cần dùng từ khoá "class".</p>
+            <ul class="options">
+                <li><input type="radio" name="option3" value="option1"> A. Đúng</li>
+                <li><input type="radio" name="option3" value="option2"> B. Sai</li>
+            </ul>
+            <h3>Câu 4.</h3>
+            <p>Độ phổ biến của Python cao hơn Java trong năm 2023.</p>
+            <ul class="options">
+                <li><input type="radio" name="option4" value="option1"> A. Đúng</li>
+                <li><input type="radio" name="option4" value="option2"> B. Sai</li>
+            </ul>
+            <h3>Câu 5.</h3>
+            <p>Trong Python, chúng ta có thể sắp xếp một danh sách bằng hàm sort().</p>
+            <ul class="options">
+                <li><input type="radio" name="option5" value="option1"> A. Đúng</li>
+                <li><input type="radio" name="option5" value="option2"> B. Sai</li>
+            </ul>
+            <h3>Câu 6.</h3>
+            <p>Mạng thường dùng trong các công ty, trường học là mạng LAN.</p>
+            <ul class="options">
+                <li><input type="radio" name="option6" value="option1"> A. Đúng</li>
+                <li><input type="radio" name="option6" value="option2"> B. Sai</li>
+            </ul>
+            <h3>Câu 7.</h3>
+            <p>Người dùng có thể điều chỉnh xung nhịp CPU trong chế độ đặc quyền.</p>
+            <ul class="options">
+                <li><input type="radio" name="option7" value="option1"> A. Đúng</li>
+                <li><input type="radio" name="option7" value="option2"> B. Sai</li>
+            </ul>
+            <h3>Câu 8.</h3>
+            <p>Zalo Web lưu thông tin đăng nhập, lịch sử đoạn chat vào bộ nhớ Cache của trình duyệt.</p>
+            <ul class="options">
+                <li><input type="radio" name="option8" value="option1"> A. Đúng</li>
+                <li><input type="radio" name="option8" value="option2"> B. Sai</li>
+            </ul>
+            <h3>Câu 9.</h3>
+            <p>Một trang web có thể dẫn ra một trang web khác bằng thẻ "<"a">"</p>
+            <ul class="options">
+                <li><input type="radio" name="option9" value="option1"> A. Đúng</li>
+                <li><input type="radio" name="option9" value="option2"> B. Sai</li>
+            </ul>
+            <h3>Câu 10.</h3>
+            <p>Sử dụng thuộc tính background-color để thay đổi màu nền.</p>
+            <ul class="options">
+                <li><input type="radio" name="option10" value="option1"> A. Đúng</li>
+                <li><input type="radio" name="option10" value="option2"> B. Sai</li>
+            </ul>
+            <h3>PHẦN II: CÂU HỎI CHỈ CÓ MỘT LỰA CHỌN</h3>
+            <p>Với mỗi câu hỏi từ 11 đến 20, thí sinh chỉ tick vào MỘT phương án đúng nhất trong 4 phương án cho trước</p>
+            <h3>Câu 11.</h3>
+            <p>Đâu là địa chỉ IP khả dụng ?</p>
+            <ul class="options">
+                <li><input type="radio" name="option11" value="option1"> A. 0.0.1</li>
+                <li><input type="radio" name="option11" value="option2"> B. 192.168.1.0</li>
+                <li><input type="radio" name="option11" value="option3"> C. 192.153.2.73</li>
+                <li><input type="radio" name="option11" value="option4"> D. 192.168.1.256</li>
+            </ul>
+            <h3>Câu 12.</h3>
+            <p>Lá cờ đỏ sao vàng hiện nay của nước ta được chọn làm Quốc kì vào năm nào ?</p>
+            <ul class="options">
+                <li><input type="radio" name="option12" value="option1"> A. 1975 </li>
+                <li><input type="radio" name="option12" value="option2"> B. 1976</li>
+                <li><input type="radio" name="option12" value="option3"> C. 1977</li>
+                <li><input type="radio" name="option12" value="option4"> D. 1978</li>
+            </ul>
+            <h3>Câu 13.</h3>
+            <p>Đâu là pha tốn nhiều thời gian và tài nguyên nhất trong một vòng đời phát triển phần mềm ?</p>
+            <ul class="options">
+                <li><input type="radio" name="option13" value="option1"> A. Pha Thiết kế</li>
+                <li><input type="radio" name="option13" value="option2"> B. Pha Cài đặt</li>
+                <li><input type="radio" name="option13" value="option3"> C. Pha Kiểm thử</li>
+                <li><input type="radio" name="option13" value="option4"> D. Pha Bảo trì</li>
+            </ul>
+            <h3>Câu 14.</h3>
+            <p>Phím tắt Task Manager trên Window 10 là gì ?</p>
+            <ul class="options">
+                <li><input type="radio" name="option14" value="option1"> A. Ctrl + Shift + Del</li>
+                <li><input type="radio" name="option14" value="option2"> B. Ctrl + Shift + Esc</li>
+                <li><input type="radio" name="option14" value="option3"> C. Ctrl + Alt + Del</li>
+                <li><input type="radio" name="option14" value="option4"> D. Ctrl + Shift + Alt</li>
+            </ul>
+            <h3>Câu 15.</h3>
+            <p>Thuật toán tìm kiếm nào sau đây không phải thuật toán tìm kiếm mù ?</p>
+            <ul class="options">
+                <li><input type="radio" name="option15" value="option1"> A. DFS</li>
+                <li><input type="radio" name="option15" value="option2"> B. BFS</li>
+                <li><input type="radio" name="option15" value="option3"> C. IDS</li>
+                <li><input type="radio" name="option15" value="option4"> D. IDA*</li>
+            </ul>
+            <h3>Câu 16.</h3>
+            <p>Học bổng loại giỏi của PTIT có giá trị tương đương bao nhiêu phần trăm học phí kì học đó ?</p>
+            <ul class="options">
+                <li><input type="radio" name="option16" value="option1"> A. 100%</li>
+                <li><input type="radio" name="option16" value="option2"> B. 110%</li>
+                <li><input type="radio" name="option16" value="option3"> C. 120%</li>
+                <li><input type="radio" name="option16" value="option4"> D. 130%</li>
+            </ul>
+            <h3>Câu 17.</h3>
+            <p>Có bao nhiêu cơ sở PTIT trên cả nước ?</p>
+            <ul class="options">
+                <li><input type="radio" name="option17" value="option1"> A. 1</li>
+                <li><input type="radio" name="option17" value="option2"> B. 2</li>
+                <li><input type="radio" name="option17" value="option3"> C. 3</li>
+                <li><input type="radio" name="option17" value="option4"> D. 4</li>
+            </ul>
+            <h3>Câu 18.</h3>
+            <p>Chọn phương án đúng:</p>
+            <ul class="options">
+                <li><input type="radio" name="option18" value="option1"> A. Đúng</li>
+                <li><input type="radio" name="option18" value="option2"> B. Sai</li>
+                <li><input type="radio" name="option18" value="option3"> C. Câu phía trên đúng</li>
+                <li><input type="radio" name="option18" value="option4"> D. Câu A sai</li>
+            </ul>
+            <h3>Câu 19.</h3>
+            <p>Đâu là ngôn ngữ lập trình bậc thấp ?</p>
+            <ul class="options">
+                <li><input type="radio" name="option19" value="option1"> A. C#</li>
+                <li><input type="radio" name="option19" value="option2"> B. Pascal</li>
+                <li><input type="radio" name="option19" value="option3"> C. Python</li>
+                <li><input type="radio" name="option19" value="option4"> D. JavaScript</li>
+            </ul>
+            <h3>Câu 20.</h3>
+            <p>Nhược điểm của mô hình các tiến trình hợp tác qua tài nguyên chung là gì ?</p>
+            <ul class="options">
+                <li><input type="radio" name="option20" value="option1"> A. Đòi hỏi phải loại trừ tương hỗ</li>
+                <li><input type="radio" name="option20" value="option2"> B. Xuất hiện bế tắc và đói</li>
+                <li><input type="radio" name="option20" value="option3"> C. Yêu cầu đảm bảo tính nhất quán của dữ liệu</li>
+                <li><input type="radio" name="option20" value="option4"> D. Cả 3 đáp án trên</li>
+            </ul>
+            <h3>PHẦN III: CÂU HỎI CÓ NHIỀU HƠN MỘT LỰA CHỌN</h3>
+            <p>Với mỗi câu hỏi từ 21 đến 30, thí sinh tick vào TẤT CẢ các phương án mà cho là đúng (Có thể nhiều hơn 1)</p>
+            <h3>Câu 21.</h3>
+            <p>Đâu là biến thuộc kiểu nguyên trong Python ?</p>
+            <ul class="options">
+                <li><input type="checkbox" name="option21" value="option1"> A. x = 3</li>
+                <li><input type="checkbox" name="option21" value="option2"> B. x = 'PTIT'</li>
+                <li><input type="checkbox" name="option21" value="option3"> C. x = 5522352352352</li>
+                <li><input type="checkbox" name="option21" value="option4"> D. x = False</li>
+            </ul>
+            <h3>Câu 22.</h3>
+            <p>Đâu là các Cấu trúc dữ liệu kế thừa từ Collectors trong Java ?</p>
+            <ul class="options">
+                <li><input type="checkbox" name="option22" value="option1"> A. Map</li>
+                <li><input type="checkbox" name="option22" value="option2"> B. Vector</li>
+                <li><input type="checkbox" name="option22" value="option3"> C. List</li>
+                <li><input type="checkbox" name="option22" value="option4"> D. Pair</li>
+            </ul>
+            <h3>Câu 23.</h3>
+            <p>Khẳng định nào là đúng ?</p>
+            <ul class="options">
+                <li><input type="checkbox" name="option23" value="option1"> A. HTML là một ngôn ngữ lập trình</li>
+                <li><input type="checkbox" name="option23" value="option2"> B. Phần mở rộng của file JavaScript là .js</li>
+                <li><input type="checkbox" name="option23" value="option3"> C. Không thể chạy file CSS riêng lẻ</li>
+                <li><input type="checkbox" name="option23" value="option4"> D. Một file HTML có thể sử dụng nhiêu file JavaScript cùng lúc</li>
+            </ul>
+            <h3>Câu 24.</h3>
+            <p>Đâu là những chuyên ngành của ngành CNTT tại PTIT ?</p>
+            <ul class="options">
+                <li><input type="checkbox" name="option24" value="option1"> A. Công nghệ phần mềm</li>
+                <li><input type="checkbox" name="option24" value="option2"> B. Hệ thống thông tin</li>
+                <li><input type="checkbox" name="option24" value="option3"> C. Khoa học máy tính</li>
+                <li><input type="checkbox" name="option24" value="option4"> D. Điện toán đám mây</li>
+            </ul>
+            <h3>Câu 25.</h3>
+            <p>Trình duyệt sử dụng core Chromium là: </p>
+            <ul class="options">
+                <li><input type="checkbox" name="option25" value="option1"> A. Microsoft Edge</li>
+                <li><input type="checkbox" name="option25" value="option2"> B. Google Chrome</li>
+                <li><input type="checkbox" name="option25" value="option3"> C. Firefox</li>
+                <li><input type="checkbox" name="option25" value="option4"> D. Opera</li>
+            </ul>
+            <h3>Câu 26.</h3>
+            <p>Đâu là sản phẩm của Adobe ?</p>
+            <ul class="options">
+                <li><input type="checkbox" name="option26" value="option1"> A. Adobe Photoshop</li>
+                <li><input type="checkbox" name="option26" value="option2"> B. Adobe Premier Pro</li>
+                <li><input type="checkbox" name="option26" value="option3"> C. Adobe Valorant</li>
+                <li><input type="checkbox" name="option26" value="option4"> D. Adobe Illustrator</li>
+            </ul>
+            <h3>Câu 27.</h3>
+            <p>Đâu là Học viện ?</p>
+            <ul class="options">
+                <li><input type="checkbox" name="option27" value="option1"> A. UET</li>
+                <li><input type="checkbox" name="option27" value="option2"> B. PTIT</li>
+                <li><input type="checkbox" name="option27" value="option3"> C. VNUE</li>
+                <li><input type="checkbox" name="option27" value="option4"> D. HNUE</li>
+            </ul>
+            <h3>Câu 28.</h3>
+            <p>Các tuyến đường thuộc nội thành Hà Nội là:</p>
+            <ul class="options">
+                <li><input type="checkbox" name="option28" value="option1"> A. Đường Nguyễn Trãi</li>
+                <li><input type="checkbox" name="option28" value="option2"> B. Đường Lý Thánh Tông - VinOcean</li>
+                <li><input type="checkbox" name="option28" value="option3"> C. Đường 379</li>
+                <li><input type="checkbox" name="option28" value="option4"> D. Đường Trần Duy Hưng</li>
+            </ul>
+            <h3>Câu 29.</h3>
+            <p>Đâu là các khoa được đào tạo tại PTIT ?</p>
+            <ul class="options">
+                <li><input type="checkbox" name="option29" value="option1"> A. Khoa Công nghệ thông tin</li>
+                <li><input type="checkbox" name="option29" value="option2"> B. Khoa Công nghệ sinh học</li>
+                <li><input type="checkbox" name="option29" value="option3"> C. Khoa Truyền thông đa phương tiện</li>
+                <li><input type="checkbox" name="option29" value="option4"> D. Khoa Tâm lý học</li>
+            </ul>
+            <h3>Câu 30.</h3>
+            <p>Đâu là biển số xe được đăng kí tại Hà Nội ?</p>
+            <ul class="options">
+                <li><input type="checkbox" name="option30" value="option1"> A. 29-N1 199.25</li>
+                <li><input type="checkbox" name="option30" value="option2"> B. 30-Z2 3044</li>
+                <li><input type="checkbox" name="option30" value="option3"> C. 28-T1 2023</li>
+                <li><input type="checkbox" name="option30" value="option4"> D. 31-Y3 143.65</li>
+            </ul>
+            <h3>PHẦN IV: CÂU HỎI TỰ LUẬN TRẢ LỜI NGẮN</h3>
+            <p>Với mỗi câu hỏi từ 31 đến 40, thí sinh trả lời ngắn gọn để thay cho dấu ba chấm trong mỗi câu</p>
+            <h3>Câu 31.</h3>
+            <p>Liệt kê 4 chiến lược chiến tranh của Mỹ tại Việt Nam.</p>
+            <textarea name="essayAnswer1" rows="6" cols="50"></textarea>
+            <h3>Câu 32.</h3>
+            <p>Trình bày quá trình xử lí thông tin trong CPU.</p>
+            <textarea name="essayAnswer2" rows="6" cols="50"></textarea>
+            <h3>Câu 33.</h3>
+            <p>Trình bày các pha trong một vòng đời phát triển phần mềm.</p>
+            <textarea name="essayAnswer3" rows="6" cols="50"></textarea>
+            <h3>Câu 34.</h3>
+            <p>Nêu luật màu bổ túc.</p>
+            <textarea name="essayAnswer4" rows="6" cols="50"></textarea>
+            <h3>Câu 35.</h3>
+            <p>Trình bày giải thuật Peterson trong quản lý tiến trình.</p>
+            <textarea name="essayAnswer5" rows="6" cols="50"></textarea>
+            <h3>Câu 36.</h3>
+            <p>So sánh 2 giải thuật DFS và BFS</p>
+            <textarea name="essayAnswer6" rows="6" cols="50"></textarea>
+            <h3>Câu 37.</h3>
+            <p>Trình bày 6 điều lịch sự khi nói của thầy Xuân Anh.</p>
+            <textarea name="essayAnswer7" rows="6" cols="50"></textarea>
+            <h3>Câu 38.</h3>
+            <p>Liệt kê 10 phần mềm trên Desktop máy tính dành cho sinh viên của trường.</p>
+            <textarea name="essayAnswer8" rows="6" cols="50"></textarea>
+            <h3>Câu 39.</h3>
+            <p>Random.</p>
+            <textarea name="essayAnswer9" rows="6" cols="50"></textarea>
+            <h3>Câu 40.</h3>
+            <p>Đừng điền vào đây.</p>
+            <textarea name="essayAnswer10" rows="6" cols="50"></textarea>
+        </div>
+        <div>
+            <a href="ketthuc.html">
+                <button> Nộp bài </button>
+            </a>
+        </div>
+        </div>
+    </body>
+</html>
